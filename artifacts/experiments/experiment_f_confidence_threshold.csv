@@ -1,0 +1,6 @@
+Threshold,Coverage_Pct,Accepted_Samples,Accuracy_On_Accepted
+0.5,100.0,60,1.0
+0.6,100.0,60,1.0
+0.7,98.3,59,1.0
+0.8,96.7,58,1.0
+0.9,91.7,55,1.0

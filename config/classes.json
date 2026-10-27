@@ -1,0 +1,25 @@
+{
+  "classes": [
+    "hello",
+    "thank_you",
+    "yes",
+    "no",
+    "please",
+    "help",
+    "sorry",
+    "iloveyou"
+  ],
+  "class_descriptions": {
+    "hello": "Open hand waving or gesturing forward from forehead/temple",
+    "thank_you": "Flat hand moving forward from chin toward receiver",
+    "yes": "Closed fist tilting/nodding up and down",
+    "no": "Index and middle fingers tapping thumb repeatedly",
+    "please": "Open flat hand rubbing chest in a circular motion",
+    "help": "Thumbs-up resting on flat non-dominant palm moving upward",
+    "sorry": "Closed fist rubbing chest in small circular motion",
+    "iloveyou": "Hand with thumb, index, and pinky fingers extended"
+  },
+  "two_hand_compatible": [
+    "help"
+  ]
+}

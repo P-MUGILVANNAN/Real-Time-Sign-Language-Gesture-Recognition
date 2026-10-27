@@ -1,0 +1,4 @@
+Model,Parameters,Train_Time_Sec,Latency_ms,Accuracy,Macro_F1
+Proposed 2-Layer LSTM,152392,18.19,26.35,0.16,0.16373185637891519
+Comparative 2-Layer GRU,116040,17.54,51.95,0.16,0.14206626706626707
+Random Forest (Stat. Landmarks),100,1.16,10.94,0.4,0.3833104395604396

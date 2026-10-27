@@ -1,0 +1,3 @@
+Experiment,Condition,Train_Samples,Test_Samples,Accuracy,Macro_F1
+Cross-User Generalization,Signer-Independent (Unseen Signers),96,48,0.14583333333333334,0.14109848484848483
+Cross-User Generalization,Signer-Dependent (Seen Signers Shared),120,50,0.18,0.1652701100069521

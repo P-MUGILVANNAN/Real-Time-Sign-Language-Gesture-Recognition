@@ -1,0 +1,30 @@
+{
+  "model_name": "signvision_lstm",
+  "architecture": "2-Layer LSTM with Dropout & Dense Projection",
+  "classes": [
+    "hello",
+    "thank_you",
+    "yes",
+    "no",
+    "please",
+    "help",
+    "sorry",
+    "iloveyou"
+  ],
+  "num_classes": 8,
+  "sequence_length": 30,
+  "feature_dim": 63,
+  "total_parameters": 152392,
+  "trained_timestamp": "2026-10-25T16:47:31.004779",
+  "split_type": "signer_independent",
+  "training_samples": 96,
+  "validation_samples": 56,
+  "test_samples": 48,
+  "test_accuracy": 0.1875,
+  "macro_f1": 0.13063325563325562,
+  "macro_precision": 0.12078373015873015,
+  "macro_recall": 0.1875,
+  "model_file": "models\\signvision_lstm_best.keras",
+  "training_curves_plot": "artifacts/plots/training_curves.png",
+  "confusion_matrix_plot": "artifacts/plots/confusion_matrix.png"
+}

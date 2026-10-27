@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter & IDEs
+.ipynb_checkpoints
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment & Credentials
+.env
+.env.*
+!.env.example
+
+# Streamlit
+.streamlit/
+
+# Large Datasets & Model Checkpoints (Exclude raw videos and custom captures from git)
+data/raw/*
+!data/raw/.gitkeep
+data/custom/*
+!data/custom/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+models/*.keras
+models/*.h5
+models/*.task
+models/checkpoints/
+
+# Test & Coverage
+.pytest_cache/
+.coverage
+htmlcov/

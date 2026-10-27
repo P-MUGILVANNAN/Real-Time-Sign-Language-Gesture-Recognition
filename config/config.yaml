@@ -1,0 +1,62 @@
+project:
+  name: "SignVision AI"
+  description: "Real-Time Sign Language Gesture Recognition Using Computer Vision and LSTM"
+  version: "1.0.0"
+
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  custom_dir: "data/custom"
+  metadata_dir: "data/metadata"
+  classes_file: "config/classes.json"
+  metadata_csv: "data/metadata/dataset_manifest.csv"
+
+features:
+  sequence_length: 30
+  num_landmarks_per_hand: 21
+  coords_per_landmark: 3
+  mode: "single_hand" # "single_hand" (63 features) or "two_hand" (126 features)
+  single_hand_features: 63
+  two_hand_features: 126
+  normalize_wrist_relative: true
+  normalize_scale_invariant: true
+
+camera:
+  device_index: 0
+  frame_width: 640
+  frame_height: 480
+  target_fps: 30
+  countdown_seconds: 3
+
+model:
+  name: "signvision_lstm"
+  architecture: "lstm"
+  save_dir: "models"
+  best_model_path: "models/signvision_lstm_best.keras"
+  metadata_path: "models/model_metadata.json"
+  lstm_units_1: 128
+  lstm_units_2: 64
+  dropout_rate: 0.3
+  dense_units: 64
+  learning_rate: 0.001
+  batch_size: 16
+  epochs: 60
+  early_stopping_patience: 12
+  reduce_lr_patience: 6
+  random_seed: 42
+
+inference:
+  confidence_threshold: 0.70
+  smoothing_window_size: 5
+  stable_frames_required: 4
+  unknown_class_label: "No confident gesture detected"
+  max_history_entries: 50
+
+experiments:
+  output_dir: "artifacts/experiments"
+  reports_dir: "artifacts/reports"
+  plots_dir: "artifacts/plots"
+  test_split_ratio: 0.2
+  val_split_ratio: 0.15
+  sequence_lengths_to_test: [15, 30, 45]
+  confidence_thresholds_to_test: [0.5, 0.6, 0.7, 0.8, 0.9]
